@@ -7,8 +7,8 @@ export default {
       txtMensagem: "",
       comentarios: [
         {
-          nome: "felipe pereira",
-          comentario: "Muito gamer",
+          nome: "",
+          comentario: "",
         },
       ],
     };
