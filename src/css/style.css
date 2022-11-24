@@ -1,0 +1,52 @@
+/*Recursos CSS ///// */
+
+.boxPadrao{
+    padding:3%;
+    width:30%;
+    margin:10vh auto;
+    border-radius:12px;
+}
+
+.bordaPadrao{
+    border:1px solid #eee;
+}
+
+.sombraPadrao{
+    box-shadow:10px 10px 2px #eee;
+}
+
+.labelPadrao{
+    font-size:1.5rem;
+}
+.textCenter{
+    text-align: center;
+}
+.textBold{
+    font-weight: bold;
+}
+.mtb-1{
+    margin:0.7rem 0
+}
+.p-1{
+    padding:0.4rem;
+}
+.inputPadrao{
+    width:100%;
+    border:none;
+    outline:none;
+}
+.btn{
+    padding:2%;
+    background-color: rgba(119,112,190,0.7);
+    border:none;
+    border-radius:12px;
+    display:inline-block;
+    cursor:pointer;
+}
+.btnPadrao{
+    box-shadow: inset -3px -3px 3px rgba(72,56,232,0.3);
+    color:#fff;
+}
+.bgPadrao{
+    background-color:rgba(243,236,227,0.2)
+}
