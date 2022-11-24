@@ -5,20 +5,22 @@ export default {
       // mensagem: "",
       inputNome: "",
       txtMensagem: "",
-      comentarios: [
-        {
-          nome: "",
-          comentario: "",
-        },
-      ],
+      comentarios: []
     };
   },
   methods: {
     adComentario() {
-      this.comentarios.push({
-        nome: this.inputNome,
-        comentario: this.txtMensagem
-      });
+      if(this.txtMensagem.trim() === '') return 
+      if(this.inputNome.trim() === "") this.inputNome = 'Usuário Anônimo'
+        this.comentarios.push({
+          nome: this.inputNome,
+          comentario: this.txtMensagem,
+        });
+      this.inputNome=''
+      this.txtMensagem=''
     },
+    excluir(n){
+      this.comentarios.splice(n,1)
+    }
   },
 };

@@ -25,10 +25,10 @@
                 <button type="button" @click="adComentario" class="btn btn-dark" id="btnComentario">Confirmar</button>
             </form>
             <div class="my-5">
-                <div class="border p-3" v-for="coment in comentarios">
+                <div class="border p-3 my-2" v-for="(coment, n) in comentarios">
                     <span class="autor"><strong>Nome: </strong>{{ coment.nome }}</span>
-                    <p class="my-4" id="mensagem"><strong>Comentário:</strong> {{ coment.comentario }}</p>
-                    <a href="a">Excluir</a>
+                    <p class="my-4" id="mensagem"> {{ coment.comentario }}</p>
+                    <a href="#" @click.prevent="excluir(n)">Excluir</a>
                 </div>
             </div>
         </div>
